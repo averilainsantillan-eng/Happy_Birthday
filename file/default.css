@@ -87,20 +87,19 @@ a {
 }
 
 #text {
-  width: 272px;
-  height: 560px;
-  left: 188px;
-  top: 80px;
+  width: 330px;
+  height: 400px;
+  left: 150px;
+  top: 40px;
   position: absolute;
 }
 
 #code {
   display: none;
   color: rgb(196, 255, 255);
-  font-size: 16px;
-  margin-top: 70px;
-  line-height: 25px;
-  font-size: larger;
+  margin-top: 0;
+  line-height: 22px;
+  font-size: 15px;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(112, 196, 255, 0.5);
 }
@@ -109,7 +108,7 @@ a {
 #cake-box {
   position: absolute;
   left: 175px;
-  top: 380px;
+  top: 455px;
   width: 300px;
   display: none;
   flex-direction: column;
@@ -147,7 +146,7 @@ a {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 48px;
+  top: 58px;
   left: 50%;
   margin-left: -2.5px;
   width: 5px;
