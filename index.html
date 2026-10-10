@@ -43,9 +43,9 @@
 
     <div id="main">
         <div id="error"><a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a> (<a href="http://firefox.com.cn/download/">Firefox</a>)</div>
-        <audio autoplay="autoplay" height="100" width="100" id="myAudio">
-            <source src="aud.mp3" type="audio/mp3" />
-            <embed height="100" width="100" src="aud.mp3" />
+        <audio height="100" width="100" id="myAudio">
+            <source src="tma.mp3" type="audio/mp3" />
+            <embed height="100" width="100" src="tma.mp3" />
         </audio>
         <div id="wrap">
             <div id="text">
@@ -281,7 +281,6 @@
         }
 
         function triggerStart(e) {
-            playAudio();
             var pt = getCanvasPoint(e);
             if (seed.hover(pt.x, pt.y)) {
                 hold = 0; 
@@ -360,6 +359,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
             // Typing speed: default is 75ms. Pass a number like .typewriter(50, function() {...}) to make it faster, or .typewriter(100, ...) for slower.
+            playAudio();
             $("#code").show().typewriter(35, function() {
                 showCakeAnimation();
             });
